@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int i,n,a1,a2,a3;
+	printf("enter the value of n\n");
+	scanf("%d\n",&n);
+	a1=0;
+	a2=1;
+	if(n==1)
+	printf("%d ",a1);
+	else if(n==2)
+	printf("%d %d ",a1,a2);
+	else if(n<=0)
+	printf("sorry your input is wrong");
+	else
+	{
+		printf("%d %d ",a1,a2);
+		for(i=1;i<n-1;i++)
+	{
+		a3=a1+a2;
+		printf("%d ",a3);
+		a1=a2;
+		a2=a3;
+	}
+}
+getch();
+return 0;	
+}
